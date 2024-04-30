@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   #------------------------------
   # Department routes
 
-  get("/departments", { :controller => "department", :action => "index" })
+  get("/departments", { :controller => "departments", :action => "index" })
   
   get("/departments/:path_id", { :controller => "departments", :action => "show" })
 
@@ -42,6 +42,6 @@ Rails.application.routes.draw do
 
   #------------------------------
 
-  post("/insert_enrollment", { :controller => "enrollments", :action => "create" })
+  post("/insert_enrollment", { :controller => "enrollment", :action => "create" })
 
 end

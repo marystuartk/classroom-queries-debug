@@ -6,9 +6,11 @@
   Go back
 </a>
 
+<% @students.each do |student| %>
 <div>
-  <a href="/delete_student/<%= @student.id %>">Delete student</a>
+  <a href="/delete_student/<%= student.id %>">Delete student</a>
 </div>
+<% end %>
 
 <hr>
 
